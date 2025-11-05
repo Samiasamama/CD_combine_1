@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 class ProgramSet {
@@ -121,7 +120,7 @@ int main() {
     ProgramSet p;
     int choice;
 
-    cout << "Choose a task to execute (1-7): ";
+    cout << "Choose a task (1-7): ";
     cin >> choice;
 
     switch (choice) {
@@ -132,8 +131,9 @@ int main() {
         case 5: p.task5(); break;
         case 6: p.task6(); break;
         case 7: p.task7(); break;
-        default: cout << "Invalid choice!" << endl; break;
+        default: cout << "invalid choice" << endl; break;
     }
 
     return 0;
 }
+
